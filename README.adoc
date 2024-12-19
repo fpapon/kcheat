@@ -12,3 +12,11 @@ kubectl get pods --all-namespaces | egrep -i 'Evicted|Terminated|ContainerStatus
 == Kubernetes specifications explorer
 
 https://kubespec.dev/
+
+== Tools
+
+=== Bundlebee
+
+Bundlebee is a k8s package manager. You write the manifest descriptor files in JSON format with templating engine. It also provide an Apache Maven plugin to easily integration in CI/CD platform. No need to install a specific package repository, you can store the descriptor files in a git repository or a Maven repository if you want to use coordinates with versions.
+
+https://www.yupiik.io/bundlebee
