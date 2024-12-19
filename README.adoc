@@ -8,3 +8,7 @@ If you have a disk pressure on a node, you can try to clean up all zombie pods:
 ----
 kubectl get pods --all-namespaces | egrep -i 'Evicted|Terminated|ContainerStatusUn|Error' | awk '{print $2 " --namespace=" $1}' | xargs kubectl delete pod --force=true --wait=false --grace-period=0
 ----
+
+== Kubernetes specifications explorer
+
+https://kubespec.dev/
